@@ -1,1 +1,5 @@
-
+/*
+post id
+post body
+foreign key for user
+*/

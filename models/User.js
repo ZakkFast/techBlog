@@ -1,12 +1,10 @@
 const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
-const { update } = require("lodash");
-const { FAILSAFE_SCHEMA } = require("js-yaml");
 
 class User extends model {
-  checkPassword(logingPassword) {
-    return bcrypt.compareSync(logingPassword, this.password);
+  checkPassword(loginPassword) {
+    return bcrypt.compareSync(loginPassword, this.password);
   }
 }
 
