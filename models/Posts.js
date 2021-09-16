@@ -1,7 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-postMessage.init(
+class Posts extends Model {}
+
+Posts.init(
   {
     id: {
       type: DataTypes.INTEGER,
