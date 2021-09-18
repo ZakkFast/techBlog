@@ -19,6 +19,11 @@ Posts.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    date_create: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.now
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
